@@ -1,4 +1,7 @@
 class Product < ActiveRecord::Base
+  ############## autres ####################
+  default_scope :order => 'title'
+
   ############## validation ####################
   #on verifie que les champs sont remplis
   validates :title, :description, :image_url, :presence => true

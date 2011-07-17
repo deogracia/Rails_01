@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rails01</title>
-  <%= stylesheet_link_tag :all %>
+  <title>Rails01 Books Online Store</title>
+  <%= stylesheet_link_tag "scaffold" %>
+  <%= stylesheet_link_tag "rails_01", :media => "all" %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
-<body>
+<body id="store">
+    <div id="banner">
+      <%= image_tag("logo_.png") %>
+      <%= @page_title || "Rails01 Books Online Store" %>
+    </div>
 
-<%= yield %>
-
+    <div id="columns">
+      <div id="side">
+        <a href="http://www....">Home</a><br />
+        <a href="http://www..../faq">Questions</a><br />
+        <a href="http://www..../news">News</a><br />
+        <a href="http://www..../contact">Contact</a><br />
+        <p><%= Time.now %></p>
+      </div>
+      <div id="main">
+        <%= yield %>
+      </div>
+    </div>
 </body>
 </html>
