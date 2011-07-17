@@ -1,13 +1,12 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 ruby:
-  title: Programming Ruby 1.9
-  description:
+  title: "Programming Ruby 1.9"
+  description: "
     Ruby is the fastest growing and most exciting dynamic
     language out there. If you need to get working programs
-    delivered fast, you should add Ruby to your toolbox.
-
-  image_url: /images/ruby.png
+    delivered fast, you should add Ruby to your toolbox."
+  image_url: "/images/ruby.png"
   price: 49.50
 
 one:
@@ -23,11 +22,10 @@ two:
   price: 9.99
 
 cucumber:
-  title: The Cucumber Book: Behaviour-Driven Development for Testers and Developers
-  description:
-    Your customers want rock-solid, bug-free software that does exactly what they expect it to do.
+  title: "The Cucumber Book: Behaviour-Driven Development for Testers and Developers"
+  description: "Your customers want rock-solid, bug-free software that does exactly what they expect it to do.
     Yet they can not always articulate their ideas clearly enough for you to turn them into code.
-    The Cucumber Book dives straight into the core of the problem \: communication between people.
-    Cucumber saves the day; it is a testing, communication, and requirements tool, all rolled into one.
-  image_url: /images/cucumber-book.jpg
+    The Cucumber Book dives straight into the core of the problem : communication between people.
+    Cucumber saves the day; it is a testing, communication, and requirements tool, all rolled into one."
+  image_url: "/images/cucumber-book.jpg"
   price: 38
