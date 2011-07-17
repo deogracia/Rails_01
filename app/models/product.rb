@@ -11,4 +11,6 @@ class Product < ActiveRecord::Base
       :with    => %r{\.(gif|jpg|png)$}i,
       :message => 'must be an URL for GIF, JPG or PNG image.'
   }
+  #on verifie qye la taille du titre à une taile minimale
+  validates :title, :length => { :minimum => 10 }
 end
