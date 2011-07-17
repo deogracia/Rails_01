@@ -59,7 +59,7 @@ components to bend it to your will, all without messy hacks. This pioneering boo
 into the new Rails 3 APIs and shows you how to use them to write better web applications and make your day-to-day work
 with Rails more productive.
 </p>},
-:image_url => '/images/jvrails.jpg',
+:image_url => '/images/jvrails.png',
 :price => 41)
 # . . .
 Product.create(:title => 'Continuous Testing: with Ruby, Rails, and JavaScript',
