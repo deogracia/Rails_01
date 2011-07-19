@@ -1,4 +1,8 @@
 class Product < ActiveRecord::Base
+  ############## relations ####################
+  has_many :line_items
+  before_destroy :ensure_not_referenced_by_any_line_item
+
   ############## autres ####################
   default_scope :order => 'title'
 
@@ -16,4 +20,16 @@ class Product < ActiveRecord::Base
   }
   #on verifie qye la taille du titre à une taile minimale
   validates :title, :length => { :minimum => 10 }
+
+  private
+  # ensure that there are no line items referencing this product
+  def ensure_not_referenced_by_any_line_item
+    if line_items.count.zero?
+      return true
+    else
+      errors.add(:base, 'Line Items present')
+      return false
+    end
+  end
+
 end
