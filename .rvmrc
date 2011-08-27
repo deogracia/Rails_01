@@ -1,7 +1,10 @@
-# création du gemset s'il n'existe pas
+# Creation du gemset
 rvm ruby-1.9.2-p290@Rails_01 --create
 
-#on s'assure qu'au moins bundle y soit présent
+# On fait le vide
+rvm --force  gemset empty ruby-1.9.2-p290@Rails_01
+
+# On s'assure qu'au moins bundle y soit présent
 if ! command -v bundle ; then
   gem install bundler
 fi
