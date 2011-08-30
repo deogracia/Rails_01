@@ -9,6 +9,7 @@ group :development, :test do
   gem 'rcov'
   gem 'sqlite3'
   gem 'test-unit'
+  gem 'simplecov', '>= 0.4.2', :require => false, :group => :test
 end
 
 # Use unicorn as the web server
