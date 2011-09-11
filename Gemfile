@@ -1,11 +1,16 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.9'
+gem 'rails', '3.0.10'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+group :development, :test do
+  gem 'rcov'
+  gem 'sqlite3'
+  gem 'test-unit'
+  gem 'simplecov', '>= 0.4.2', :require => false, :group => :test
+end
 
 gem 'rspec-rails'
 gem 'test-unit'

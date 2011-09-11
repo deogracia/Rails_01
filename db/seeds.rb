@@ -5,8 +5,13 @@
 #
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Mayor.create(:name => 'Daley', :city => cities.first)
+
+# on fait le ménage
+
 Product.delete_all
-# . . .
+
+# On peut créer les notres
+
 Product.create(:title => 'Programming Ruby 1.9',
 :description =>
 %{<p>
